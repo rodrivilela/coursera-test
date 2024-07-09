@@ -2,24 +2,32 @@
     box-sizing: border-box;
 }
 
-
 h1 {
     text-align: center;
+    font-size: 175%;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
 }
 
 .menuItem {
-    background-color: lightgray;
-    border: 3px solid black;
-    padding: 10px;
-    margin: 15px;
+    padding: 15px;
     position: relative;
     float: left;
-    width: 95%;
+}
+
+.menuContainer {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 .menuTitle {
     font-weight: bold;
-    border: 2px solid black;
+    font-size: 125%;
+    border: 1px solid black;
     border-top: 0px;
     border-right: 0px;
     text-align: center;
@@ -52,6 +60,18 @@ h1 {
 
 @media (min-width: 992px) {
     .menuItem {
-        width: 30%;
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menuItem {
+        width: 50%;
+    }
+
+    #rightMenuItem {
+        clear: both;
+        padding-top: 8px;
+        width: 100%;
     }
 }
